@@ -50,7 +50,7 @@ app.use('/database/uploads', express.static(path.join(__dirname, '../database/up
 //allowed methods
 //allowed headers
 app.use(cors({
-  origin: 'https://testingvercel-6btm.vercel.app/', 
+  origin: 'https://testingvercel-6btm.vercel.app', 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
