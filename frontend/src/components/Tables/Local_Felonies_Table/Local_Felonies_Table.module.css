@@ -1,0 +1,84 @@
+/* Styling for the entire table container */
+.table_container {
+  /* margin: 20px; */
+  padding: 10px;
+  max-width: 100%;
+  max-height: 600px;
+  overflow: visible;
+}
+
+/* Styling for the table itself */
+.table_container .crime_reports_table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures no double borders between cells */
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-spacing: 2px; /* Adds space between the cells (only applicable when border-collapse is set to 'separate') */
+}
+
+/* Styling for the table header cells */
+.table_container .table_header {
+  background-color: #f2f2f2;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #ddd; /* Adds borders to header cells */
+  text-transform: uppercase; /* Converts header text to uppercase */
+}
+
+/* Styling for individual table cells */
+.table_container .table_cell {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd; /* Adds borders to table cells */
+  text-wrap: nowrap;
+}
+.table_container .table_cell_centered {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd; /* Adds borders to table cells */
+  text-wrap: nowrap;
+}
+.table_container .table_cell > a > img,
+.table_container .table_cell_centered > a > img{
+  width: 30px;
+  height: auto;
+  border-radius: 9px ;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.table_container .table_cell > a > img:hover,
+.table_container .table_cell_centered > a > img:hover{
+  transform: scale(1.1);
+}
+
+/* Alternating row colors for readability */
+.table_container .crime_reports_table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.table_container .crime_reports_table tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Hover effect for rows */
+.table_container .crime_reports_table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Responsive Design: Make the table look better on smaller screens */
+@media (max-width: 768px) {
+  .table_container .crime_reports_table {
+    font-size: 14px;
+  }
+
+  .table_container .table_header,
+  .table_cell {
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,107 @@
+/* Report_View.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem; /* Changed to rem for better scalability */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centering vertically as well */
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added smooth transition */
+}
+
+.image:hover {
+  transform: scale(1.1); /* Adds zoom effect on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+.details {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+  font-size: 1rem; /* Changed to rem for better scalability */
+  color: #555;
+  margin: 10px 0;
+}
+
+.details strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styles for additional images */
+.image + .image {
+  margin-top: 15px;
+  width: 200px;
+  height: auto;
+  border-radius: 0;
+  transition: transform 0.3s ease; /* Added transition for other images */
+}
+
+.image + .image:hover {
+  transform: scale(1.05); /* Zoom effect for additional images */
+}
+
+@media (min-width: 600px) {
+  .profile {
+    flex-direction: row;
+    align-items: center; /* Align items horizontally for larger screens */
+  }
+
+  .details {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .image {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .image {
+    width: 120px; /* Adjust image size for smaller screens */
+    height: 120px;
+  }
+
+  .details {
+    padding: 15px; /* Smaller padding for smaller screens */
+  }
+
+  .image + .image {
+    width: 150px; /* Adjust second image size for smaller screens */
+  }
+}

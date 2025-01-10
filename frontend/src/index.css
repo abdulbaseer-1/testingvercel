@@ -1,0 +1,9 @@
+body,img,a {
+  margin: 0;
+  border: 0;
+}
+:root{
+  background-color: rgba(139, 255, 86, 0.1);
+  box-sizing: border-box;
+  font-size: 16px;
+}

@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    background-color: azure;
+    padding-bottom: 2%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    margin-top: 2%;
+}
+.text{
+    color: rgb(53, 2, 240);
+    font-size: 200%;
+    font-weight: 700;
+}
+.underline{
+    width: 4%;
+    height: 5px;
+    margin-top: 1%;
+    background: rgb(53, 2, 240);
+    border-radius: 20%;
+}
+.inputs{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 1%;
+    width: 30%;
+    height: 15%;
+    background: #eaeaea;
+    border-radius: 3%;
+}
+.input h4{
+    color: rgb(53, 2, 240);
+    margin: 5% 5%;
+}
+.input input{
+    height: 12%;
+    width: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 90%;
+}
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 4% auto;
+}
+.Recovery-Phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 55px;
+    color: #fff;
+    background: rgb(53, 2, 240);
+    border-radius: 50px;
+    font-size: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}

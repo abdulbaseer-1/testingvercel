@@ -1,0 +1,47 @@
+.content_area {
+    display: grid;
+    grid-template-columns: auto 4fr;
+    row-gap: 0px;
+    column-gap: 0px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    background-color: #740712;
+    border-radius: 4%;
+  }
+
+.noSidebar {
+    display: block;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+  
+.content_area .sidebar { /*alhamdulillah working now , refer to sidebar module for solution*/
+  align-self: right;
+  box-sizing: border-box;
+}
+
+.content_area .contentBody {
+  align-self: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: fit-to-parent;
+}
+
+.content_area .switch_button,
+.noSidebar .switch_button{
+    position: absolute;
+    display: inline;
+}
+
+.noSidebar .switch_button {
+    opacity: 0.5;
+}
+.noSidebar .switch_button:hover {
+    opacity: 0.9;
+}

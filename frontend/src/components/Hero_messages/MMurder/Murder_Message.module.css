@@ -1,0 +1,79 @@
+.hero_message {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    text-align: left;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px rgba(186, 166, 166, 0.274);
+    max-width: 40vw;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    line-height: 30px;
+}
+.hero_message:hover {
+ background-color: rgba(250, 235, 215, 0.769);
+}
+
+.hero_message .title {
+    font-size: 2.3vw;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.hero_message .heading {
+    font-weight: bold;
+    display: inline;
+}
+
+.hero_message .content,
+.hero_message .consequences {
+    font-size: 1.5vw;
+}
+.hero_message .warning {
+    font-size: 1.5vw;
+    font-style: italic;
+    color: rgb(206, 0, 0);
+}
+
+@media screen and (max-width: 1080px) {
+    .hero_message {
+        max-width: 50vw;
+    }
+
+    .hero_message .title {
+        font-size: 3vw;
+    }
+
+    .hero_message .content,
+    .hero_message .warning,
+    .hero_message .consequences {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero_message {
+        max-width: 60vw;
+        line-height: 20px;
+    }
+
+    .hero_message .title {
+        font-size: 3vw;
+    }
+
+    .hero_message .content,
+    .hero_message .warning,
+    .hero_message .consequences {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero_message {
+        display: none;
+    }
+}
