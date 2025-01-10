@@ -19,7 +19,7 @@ const Pending_Cases_Table = ({ className }) => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const response = await axios.get('https://backend-two-henna-56.vercel.app/api/reports/reportsTabular', {
+        const response = await axios.get('https://testingvercel-tau-tawny.vercel.app/api/reports/reportsTabular', {
           headers: {
             'Content-Type': 'application/json',
           },
